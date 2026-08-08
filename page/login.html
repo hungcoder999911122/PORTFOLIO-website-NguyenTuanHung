@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Đăng nhập</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="../index.html">Nguyễn Tuấn Hùng</a>
+        <nav class="main-nav" aria-label="Điều hướng chính">
+            <ul class="nav-list">
+                <li><a href="../index.html">Trang chủ</a></li>
+                <li><a href="./login.html" aria-current="page">Đăng nhập</a></li>
+                <li><a href="./admin.html">Quản trị</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <head>
-        <meta charset="utf-8">
-        <title>Dăng nhập Portfolio</title>
-    </head>
+    <main class="main-content">
+        <section class="auth-card section">
+            <h1>Đăng nhập</h1>
+            <p>Đăng nhập để truy cập khu vực quản trị nội dung portfolio.</p>
+            <form class="auth-form" action="#" method="post">
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required>
+                </div>
+                <div>
+                    <label for="password">Mật khẩu</label>
+                    <input id="password" name="password" type="password" required>
+                </div>
+                <button type="submit">Đăng nhập</button>
+            </form>
+        </section>
+    </main>
 
-    <body>
-        
-    </body>
-
+    <footer class="site-footer">
+        <p>&copy; 2026 Nguyễn Tuấn Hùng</p>
+    </footer>
+</body>
 </html>
