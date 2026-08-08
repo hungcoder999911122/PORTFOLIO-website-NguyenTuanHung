@@ -1,130 +1,97 @@
-<!-- Homepage - Show case-->
 <!DOCTYPE html>
 <html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Trang chủ</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="./index.html">Nguyễn Tuấn Hùng</a>
+        <nav class="main-nav" aria-label="Điều hướng chính">
+            <ul class="nav-list">
+                <li><a href="#hero">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+                <li><a href="./page/login.html">Đăng nhập</a></li>
+                <li><a href="./page/admin.html">Quản trị</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <head>
-        <meta charset="utf-8">
-        <title>NguyenTuanHung-PortFolio</title>
-    </head>
+    <main class="main-content">
+        <section id="hero" class="hero section">
+            <div class="hero-content">
+                <p class="eyebrow">IT Student | Web Developer Learner</p>
+                <h1>Xin chào, tôi là Nguyễn Tuấn Hùng</h1>
+                <p>Tôi đang học và xây dựng website portfolio để giới thiệu bản thân, kỹ năng và các dự án trong tương lai.</p>
+                <a class="btn-primary" href="#projects">Xem dự án</a>
+            </div>
+            <div class="hero-panel">
+                <h2>Thông tin nhanh</h2>
+                <p>Đây là trang showcase chính của portfolio.</p>
+                <p>Trang này sẽ được quản lý từ khu vực admin.</p>
+            </div>
+        </section>
 
-    <body>
+        <section id="about" class="about section">
+            <div class="about-image">
+                <div class="image-placeholder">Ảnh đại diện</div>
+            </div>
+            <div class="about-content">
+                <h2>Giới thiệu về tôi</h2>
+                <p>Tôi là sinh viên ngành Công nghệ Thông tin, đang học cách xây dựng giao diện web bằng HTML và CSS.</p>
+                <p>Tôi thích tìm hiểu cách tổ chức layout, tạo trải nghiệm người dùng và làm việc với các trang web có cấu trúc rõ ràng.</p>
+            </div>
+        </section>
 
-        <!-- Noi dat logo, thanh dieu huong menu -->
-        <header class="site-header">
-            <img src="" alt="logo website">                             <!-- Tao phan dau trang -->
-            <nav class="main-nav">                              <!--Tao khu vuc dieu huong navigation bar-->
-                <ul class="nav-list">                           <!--Tao danh sach dieu huong-->
-                    <li><a href="#hero">Home</a></li>           <!-- Lien ket den section co id hero-->
-                    <li><a href="#about">About</a></li>         <!-- Lien ket den section co id about-->
-                    <li><a href="#skills">Skills</a></li>       <!-- Lien ket den section co id skills-->
-                    <li><a href="#projects">Projects</a></li>   <!-- Lien ket den section co id projects-->
-                    <li><a href="#contact">Contact</a></li>     <!-- Lien ket den section co id contact-->
-                    <li><a href="page/login.html">Login</a></li><!-- dieu huong trang dang nhap-->
-                </ul>
-            </nav>
-        </header>
+        <section id="skills" class="skills section">
+            <h2>Kỹ năng</h2>
+            <div class="skills-list">
+                <article class="skill-card">
+                    <h3>HTML5</h3>
+                    <p>Biết cách dựng cấu trúc trang web bằng các thẻ sematic.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>CSS3</h3>
+                    <p>Biết cách tạo bố cục, màu sắc, khoảng cách và responsive.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>UI Design</h3>
+                    <p>Tập trung vào khả năng trình bày thông tin một cách rõ ràng và đẹp mắt.</p>
+                </article>
+            </div>
+        </section>
 
-        <main class="main-content">
-            <!-- hero -->
-            <section id="hero" class="hero">                    <!--id= "hero" dung de thanh navigation bar cuon den, class "hero" dung cho css-->
-                <h1>Nguyễn Tuấn Hùng</h1>
+        <section id="projects" class="projects section">
+            <h2>Dự án</h2>
+            <div class="projects-list">
+                <article class="project-card">
+                    <h3>English Vocabulary Learning</h3>
+                    <p>Website học từ vựng tiếng Anh theo phương pháp lặp lại theo khoảng thời gian.</p>
+                    <a href="#">Xem chi tiết</a>
+                </article>
+                <article class="project-card">
+                    <h3>Quizz Examination System</h3>
+                    <p>Hệ thống hỗ trợ thực hiện bài kiểm tra và quản lý lớp học.</p>
+                    <a href="#">Xem chi tiết</a>
+                </article>
+            </div>
+        </section>
 
-                <p>
-                    IT Student | web developer learner
-                </p>
+        <section id="contact" class="contact section">
+            <h2>Liên hệ</h2>
+            <p>Số điện thoại: 0336 239 077</p>
+            <a href="mailto:hungkill146@gmail.com">hungkill146@gmail.com</a>
+        </section>
+    </main>
 
-                <a href="#projects" class="btn-primary">
-                    View projects
-                </a>
-
-            </section>
-
-            <!-- About -->
-            <section id="about" class="about"> 
-                <div class="about-image">
-                    <img src="" alt="Ảnh chân dung 3D nhân vật sinh viên">
-                </div>
-
-                <div class="about-content">
-
-                    <h2>About me</h2>
-
-                    <p>Tôi là sinh viên ngành công nghệ thông tin, học tại đại học giao thông vận tải - UTH.</p>
-                    <p>Có sở thích tìm hiểu và đam mê thiết kế sản phẩm website, hệ thống.</p>
-                    <p>Sẵn sàng học hỏi, tự phát triển bản thân đáp ứng nhu cầu của các nhà tuyển dụng trong tương lai.</p>
-                    <p>Đây là nơi tôi chia sẽ những kỹ năng và dự án cá nhân của mình.</p>
-
-                </div>
-
-            </section>     
-
-            <!-- Skills -->
-            <section id="skills" class="skills">
-                <h2>Skills</h2>
-
-                <div class="skills-list">
-
-                    <div class="skill-card">
-                        <img src="" alt="logo HTML">
-                        <p>HTML5</p>
-                    </div>
-
-                    
-                    <div class="skill-card">
-                        <img src="" alt="logo CSS3">
-                        <p>CSS3</p>
-                    </div>
-
-                </div>
-
-            </section>
-
-            <!-- Project -->
-            <section id="projects" class="projects">
-                <h2>Projects</h2>
-
-                <div class="projects-list">
-
-                    <div class="project-card">
-                        <img src="" alt="Giao diện website học từ vựng tiếng Anh">
-                        <h3>English Vocabulary Learning</h3>                                        <!--Ten project-->
-                        <p>website học từ vựng tiếng anh theo phương pháp Spaced repetition</p>     <!--Mo ta project-->
-                        <a href="#">Go to project</a>
-                    </div>
-
-                    <div class="project-card">
-                        <img src="" alt="Giao diện hệ thống kiểm tra và quản lý lớp học">
-                        <h3>Quizz Examination System</h3>                                           <!--Ten project-->
-                        <p>Hệ thống giúp thực hiện kiểm tra và quản lý lớp học</p>                  <!--Mo ta project-->
-                        <a href="#">Go to project</a>
-                    </div>
-
-                    <!-- <div class="project-card">
-                        <img src="" alt="anh-project3">
-                        <h3>PortFolio - Cá nhân</h3>
-                        <p></p>
-                        <a href="">Go to project</a>
-                    </div> -->
-
-                </div>
-                
-            </section>
-
-            <!-- contact -->
-            <section id="contact" class="contact">
-                <h2>Contact</h2>
-
-                <p>SĐT: 0336239077</p>
-                <a href="mailto:hungkill146@gmail.com">hungkill146@gmail.com</a>
-
-            </section>
-
-        </main>
-
-        <footer>
-
-        </footer>
-
-    </body>
-
+    <footer class="site-footer">
+        <p>&copy; 2026 Nguyễn Tuấn Hùng</p>
+    </footer>
+</body>
 </html>
